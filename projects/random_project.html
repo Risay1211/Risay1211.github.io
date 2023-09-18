@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clicker game</title>
+<style>
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #404040;
+}
+
+.button:hover {background-color: #3137fd}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+
+<body bgcolor=grey> <center> <font face=arial light>
+<h1> Click the button </h1>
+
+<button id=MainClick class="button">Click</button>
+
+<br><br>
+
+<div id="click-count">Button clicked: 0 times</div>
+
+   <script>
+      let button = document.getElementById("MainClick");
+      let clickCount = 0;
+      let display = document.getElementById("click-count");
+      if (localStorage.getItem("clickCount")) {
+         clickCount = parseInt(localStorage.getItem("clickCount"));
+      }
+      button.addEventListener("click", function() {
+         clickCount++;
+         display.innerHTML = "Button clicked: " +  clickCount + " times";
+         localStorage.setItem("clickCount", clickCount);
+      });
+   </script>
+
+</body>
