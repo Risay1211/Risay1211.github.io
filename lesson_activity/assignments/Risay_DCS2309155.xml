@@ -1,6 +1,6 @@
 <list>
     <Weapon>
-        <Name>Desert Ragle</Name>
+        <Name>Desert Eagle</Name>
         <Type>Pistol</Type>
         <Ammo>.50 AE (Action Express)</Ammo>
         <Firing_modes>Semi-Automatic</Firing_modes>
