@@ -43,7 +43,7 @@
 
     <Weapon>
         <Name>Maschinengewehr 42</Name>
-        <Type>LMF (Light Machine Gun)</Type>
+        <Type>LMG (Light Machine Gun)</Type>
         <Ammo>7.92x57mm</Ammo>
         <Firing_modes>Automatic</Firing_modes>
     </Weapon>
