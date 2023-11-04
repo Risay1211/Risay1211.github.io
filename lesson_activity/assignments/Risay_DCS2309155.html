@@ -23,7 +23,7 @@
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(data, 'text/xml');
         const Weapons = xmlDoc.getElementsByTagName('Weapon');
-        const table = document.getElementById('WeaponTable');
+        const table = document.getElementById('Table');
         for (let i = 0; i < Weapons.length; i++) {
             const Weapon = Weapons[i];
             const Name = Weapon.getElementsByTagName('Name')[0].textContent;
