@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>XML example</title>
+</head>
+<body bgcolor="#18191A" text="white">
+<center>
+<h1 align="center">Player information</h1>
+<table border="1" style="width: 50%;" align="center">
+<tr>
+<th width=10%>No.</th>
+<th>Name</th>
+<th width = 20%>Type</th>
+<th>Ammo</th>
+<th>Firing_mode</th>
+</tr>
+<tbody id="Table"></tbody>
+</table>
+</center>
+<script>
+        fetch('Risay_DCS2309155.xml') 
+    .then(response => response.text())
+    .then(data => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data, 'text/xml');
+        const Weapons = xmlDoc.getElementsByTagName('Weapon');
+        const table = document.getElementById('WeaponTable');
+        for (let i = 0; i < Weapons.length; i++) {
+            const Weapon = Weapons[i];
+            const Name = Weapon.getElementsByTagName('Name')[0].textContent;
+            const Type = Weapon.getElementsByTagName('Type')[0].textContent;
+            const Ammo = Weapon.getElementsByTagName('Ammo')[0].textContent;
+            const Firing_modes = Weapon.getElementsByTagName('Firing_modes')[0].textContent;
+            const row = table.insertRow(i);
+            const numberCell = row.insertCell(0);
+            const NameCell = row.insertCell(1);
+            const TypeCell = row.insertCell(2);
+            const AmmoCell = row.insertCell(3);
+            const Firing_modesCell = row.insertCell(4);
+            numberCell.innerHTML = i + 1;
+            NameCell.innerHTML = name;
+            TypeCell.innerHTML = level;
+            AmmoCell.innerHTML = kills; 
+            Firing_modeCell.innerHTML = Firing_mode; 
+        }
+    })
+    .catch(error => console.error(error));
+    
+</script>
+</body>
+</html>

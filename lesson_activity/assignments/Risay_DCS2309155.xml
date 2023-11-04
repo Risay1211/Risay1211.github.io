@@ -1,0 +1,57 @@
+<list>
+    <Weapon>
+        <Name>Desert Ragle</Name>
+        <Type>Pistol</Type>
+        <Ammo>.50 AE (Action Express)</Ammo>
+        <Firing_modes>Semi-Automatic</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>Kalashnikov AK-4 7</Name>
+        <Type>Rifle</Type>
+        <Ammo>7.62x39mm</Ammo>
+        <Firing_modes>Semi-Automatic, Automatic</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>Mauser Gewehr 98 (Kar98) </Name>
+        <Type>Rifle</Type>
+        <Ammo>7.92x57mm</Ammo>
+        <Firing_modes>Bolt-action</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>Thompson Submachine Gun</Name>
+        <Type>SMG (SubMachine Gun)</Type>
+        <Ammo>.45 ACP  (Automatic Colt Pistol)</Ammo>
+        <Firing_modes>Semi-Automatic, Automatic</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>M1 Garand</Name>
+        <Type>Rifle</Type>
+        <Ammo>.30-06</Ammo>
+        <Firing_modes>Semi-Automatic</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>Winchester Model 1894</Name>
+        <Type>Rifle</Type>
+        <Ammo>.32-40 Winchester, .38-55 Winchester</Ammo>
+        <Firing_modes>Lever-Action</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>Maschinengewehr 42</Name>
+        <Type>LMF (Light Machine Gun)</Type>
+        <Ammo>7.92x57mm</Ammo>
+        <Firing_modes>Automatic</Firing_modes>
+    </Weapon>
+
+    <Weapon>
+        <Name>Remington Model 870</Name>
+        <Type>Shotgun</Type>
+        <Ammo>12 gauge</Ammo>
+        <Firing_modes>Pump-Action</Firing_modes>
+    </Weapon>
+</list>
