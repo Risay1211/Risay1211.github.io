@@ -7,7 +7,7 @@
     </Weapon>
 
     <Weapon>
-        <Name>Kalashnikov AK-4 7</Name>
+        <Name>Kalashnikov AK-47</Name>
         <Type>Rifle</Type>
         <Ammo>7.62x39mm</Ammo>
         <Firing_modes>Semi-Automatic, Automatic</Firing_modes>
