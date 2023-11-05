@@ -25,7 +25,7 @@
     .then(data => {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(data, 'text/xml');
-        const Student = xmlDoc.getElementsByTagName('Student');
+        const Students = xmlDoc.getElementsByTagName('Student');
         const table = document.getElementById('StudentTable');
         for (let i = 0; i < Students.length; i++) {
             const Student = Students[i];
