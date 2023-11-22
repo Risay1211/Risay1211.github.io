@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel=icon href=.jpg type=image/jpg>
+        <meta name=viewport content=width=device-width, initial-scale=1.0>
+        <link rel="stylesheet" href="Risay_DCS2309155_project.css">
+        <script>
+            function validateForm() {
+                let x = document.MembershipForm.email.value;
+                    if (x ==""){
+                        alert("Please provide your e-mail");
+                        return false;
+                    }
+
+                let y = document.MembershipForm.gender.value;
+                    if (y =="0"){
+                        alert("Please select a gender");
+                        return false;
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="project.html">Home</a>
+            <a href="projectabout.html">About</a>
+            <a href="projectservices.html">Services</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        <center>
+            <h1>Come Join Us!</h1>
+
+            <form name="MembershipForm" onsubmit="return validateForm()">
+
+                <table width="80%">
+                    <tr>
+                        <td>e-mail address</td>
+                        <td>:</td>
+                        <td> <input type="text" name="email" placeholder="ex. abc@email.com"> </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>:</td>
+                        <td> <input type="date" name="dob" min="1900-01-01"> </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td>
+                            <select name="gender">
+                                <option value="0">-Please select-</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp</td></tr>
+                    <tr>
+                        <td><input type="submit" value="submit"></td>
+                        <td></td>
+                        <td><input type="reset" value="reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+        <script src="Risay_DCS2309155_project.js"></script>
+    </body>
+</html>
